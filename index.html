@@ -29,8 +29,8 @@
             $('#table11 tbody tr').show();
         } else {
             $('#table11 tbody tr:has(td)').each(function () {
-                var rowtoloc = $.trim($(this).find('td:eq(1)').text());
-                var rowtiming = $.trim($(this).find('td:eq(2)').text());
+                var rowtoloc = $.trim($(this).find('td:eq(0)').text());
+                var rowtiming = $.trim($(this).find('td:eq(1)').text());
                 if (toloc.toUpperCase() != 'ALL' && timing.toUpperCase() != 'ALL') {
                     if (rowtoloc.toUpperCase() == toloc.toUpperCase() && rowtiming == timing) {
                         $(this).show();
